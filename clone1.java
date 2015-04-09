@@ -8,6 +8,13 @@ public class CharSeqIt {
 		 this.seq = cSeq;
 		 this.iter = -1;
 	 }
+
+
+
+
+
+
+
 	 
 	 //any more elements?
 	 public boolean hasNext(){
