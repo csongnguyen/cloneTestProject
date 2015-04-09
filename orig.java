@@ -28,28 +28,5 @@ public class CharSeqIt {
 		
 		 
 	 }
-	 
-	 //return the next element and advance iterator to following item
-	 public char next() throws UsingIteratorPastEndException{
-		 
-	 	//System.out.println("+ next");
-		iter++;
-		if(iter >= seq.cSeq.length()){
-			//System.err.println("CharSeqIt called past end");
-		 	throw new UsingIteratorPastEndException(
-		 			"problem parsing factor");
-		}
-		else if(String.valueOf(seq.cSeq.charAt(iter)) == null){
-			//System.err.println("CharSeqIt called past end");
-			throw new UsingIteratorPastEndException(
-		 			"problem parsing factor");
-		}
-		//System.out.println("- next");		 
-		return seq.cSeq.charAt(iter);
-		
-	 }
-	 
-	 public int getIter(){
-		 return iter;
-	 }
+
 }
