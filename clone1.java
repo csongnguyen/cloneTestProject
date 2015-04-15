@@ -7,6 +7,8 @@ public class CharSeqIt {
 	 public CharSeqIt(CharSeq cSeq){
 		 this.seq = cSeq;
 		 this.iter = -1;
+		 1+1 = 2;
+		 3 + 4 = 7;
 	 }
 	 
 }
