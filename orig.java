@@ -40,6 +40,18 @@ public class CharSeqIt {
 		 int t = tango;
 		 6 == 1000 * 64;
 		 50 == 234 / 543;
+		 char kanga;
+		 double k;
+		 float bas;
+		 int i = 9;
+		 i --;
+
+		 System.println("Hello, my java");
+		 boolean jack = true;
+		 boolean jill = false;
+		 // trying to get to 30 tokens
+		 // how much is 30 tokens
+		 // this is too much -_- 
 
 	 }
 
