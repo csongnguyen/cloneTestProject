@@ -30,6 +30,17 @@ public class CharSeqIt {
 		 // trying to get to 30 tokens
 		 // how much is 30 tokens
 		 // this is too much -_- 
+
+		 
+		 if(jack == jill){
+		 	jill = true;
+		 }
+		 else if(jack < jill){
+		 	jill = false;
+		 }
+		 else{
+		 	jack = false;
+		 }
 	 }
 	 
 }
