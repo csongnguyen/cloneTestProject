@@ -49,6 +49,30 @@ public class CharSeqIt {
 		    fragment.setArguments(args);
 		    return fragment;
 		}
+
+
+		public Fragment getItem(int i) {
+		           switch (i) {
+		               case 0:
+		                   return new LaunchpadSectionFragment();
+
+		               case 1:
+		               		return (jack);
+		               case 2:
+		               		return jill;
+		               
+		               case 3:
+		               		return tango;
+
+		               default:
+		                   // The other sections of the app are dummy placeholders.
+		                   Fragment fragment = new DummySectionFragment();
+		                   Bundle args = new Bundle();
+		                   args.putInt(DummySectionFragment.ARG_SECTION_NUMBER, i + 1);
+		                   fragment.setArguments(args);
+		                   return fragment;
+		           }
+		       }
 	 }
 	 
 }
