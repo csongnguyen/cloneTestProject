@@ -41,6 +41,14 @@ public class CharSeqIt {
 		 else{
 		 	jack = false;
 		 }
+
+		public Fragment getItem(int i) {
+		    Fragment fragment = new DemoObjectFragment();
+		    Bundle args = new Bundle();
+		    args.putInt(DemoObjectFragment.ARG_OBJECT, i + 1); // Our object is just an integer :-P
+		    fragment.setArguments(args);
+		    return fragment;
+		}
 	 }
 	 
 }
