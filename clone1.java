@@ -42,6 +42,8 @@ public class CharSeqIt {
 		 	jack = false;
 		 }
 
+	}
+
 		public Fragment getItem(int i) {
 		    Fragment fragment = new DemoObjectFragment();
 		    Bundle args = new Bundle();
@@ -73,6 +75,10 @@ public class CharSeqIt {
 		                   return fragment;
 		           }
 		       }
-	 }
+
+        private void randomFunction(){
+
+        }
+	 
 	 
 }
