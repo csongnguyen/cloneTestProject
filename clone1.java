@@ -76,9 +76,26 @@ public class CharSeqIt {
 		           }
 		       }
 
-        private void randomFunction(){
+       private void randomFunction(int a, int b){
+       	int token1 = a*b;
+       	int token2 = a %% b;
+       	int token3 = token1 - token2; 
+       	float token4 = token1 / token3;
 
-        }
+       	for(int i = 0; i < 5; i++){
+       		System.out.println(token4);
+       		if(token2 > token3){
+       			token2= token3;
+       		}
+       		else if(8 == 9){
+       			token3 = token2;
+       		}
+       		else if(a != b){
+       			Arraylist<int> b = new Arraylist<int>();
+       			
+       		}
+       	}
+       }
 	 
 	 
 }
