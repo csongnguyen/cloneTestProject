@@ -64,54 +64,55 @@ public class CharSeqIt {
 		 	jack = false;
 		 }
 
-		/**A java class function that will not be a clone
-		 * A dummy fragment representing a section of the app, but that simply displays dummy text.
-		 */
-		public static class DemoObjectFragment extends Fragment {
 
-		    public static final String ARG_OBJECT = "object";
-
-		    @Override
-		    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-		            Bundle savedInstanceState) {
-		        View rootView = inflater.inflate(R.layout.fragment_collection_object, container, false);
-		        Bundle args = getArguments();
-		        ((TextView) rootView.findViewById(android.R.id.text1)).setText(
-		                Integer.toString(args.getInt(ARG_OBJECT)));
-		        return rootView;
-		    }
-		}
-
-		public Fragment getItem(int i) {
-		    Fragment fragment = new DemoObjectFragment();
-		    Bundle args = new Bundle();
-		    args.putInt(DemoObjectFragment.ARG_OBJECT, i + 1); // Our object is just an integer :-P
-		    fragment.setArguments(args);
-		    return fragment;
-		}
-
-		public Fragment getItem(int i) {
-		           switch (i) {
-		               case 0:
-		                   return new LaunchpadSectionFragment();
-
-		               case 1:
-		               		return (jack);
-		               case 2:
-		               		return jill;
-		               
-		               case 3:
-		               		return tango;
-
-		               default:
-		                   // The other sections of the app are dummy placeholders.
-		                   Fragment fragment = new DummySectionFragment();
-		                   Bundle args = new Bundle();
-		                   args.putInt(DummySectionFragment.ARG_SECTION_NUMBER, i + 1);
-		                   fragment.setArguments(args);
-		                   return fragment;
-		           }
-		       }
 	 }
+
+	 /**
+	  * A dummy fragment representing a section of the app, but that simply displays dummy text.
+	  */
+
+     public static final String ARG_OBJECT = "object";
+
+     @Override
+     public View onCreateView(LayoutInflater inflater, ViewGroup container,
+             Bundle savedInstanceState) {
+         View rootView = inflater.inflate(R.layout.fragment_collection_object, container, false);
+         Bundle args = getArguments();
+         ((TextView) rootView.findViewById(android.R.id.text1)).setText(
+                 Integer.toString(args.getInt(ARG_OBJECT)));
+         return rootView;
+     }
+	 
+
+	 public Fragment getItem(int i) {
+	     Fragment fragment = new DemoObjectFragment();
+	     Bundle args = new Bundle();
+	     args.putInt(DemoObjectFragment.ARG_OBJECT, i + 1); // Our object is just an integer :-P
+	     fragment.setArguments(args);
+	     return fragment;
+	 }
+
+	 public Fragment getItem2(int i) {
+	            switch (i) {
+	                case 0:
+	                    return new LaunchpadSectionFragment();
+
+	                case 1:
+	                		return (jack);
+	                case 2:
+	                		return jill;
+	                
+	                case 3:
+	                		return tango;
+
+	                default:
+	                    // The other sections of the app are dummy placeholders.
+	                    Fragment fragment = new DummySectionFragment();
+	                    Bundle args = new Bundle();
+	                    args.putInt(DummySectionFragment.ARG_SECTION_NUMBER, i + 1);
+	                    fragment.setArguments(args);
+	                    return fragment;
+	            }
+	        }
 
 }

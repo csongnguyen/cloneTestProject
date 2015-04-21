@@ -51,7 +51,7 @@ public class CharSeqIt {
 		}
 
 
-		public Fragment getItem(int i) {
+		public Fragment getItem2(int i) {
 		           switch (i) {
 		               case 0:
 		                   return new LaunchpadSectionFragment();
